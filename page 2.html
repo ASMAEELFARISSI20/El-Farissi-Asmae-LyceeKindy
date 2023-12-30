@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Inscription</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  #7cc9e7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;  
+             background : transparent;
+            padding: 20px;
+            box-shadow: 0 0 10px white;
+            display: grid;
+            gap: 10px;
+            width: 800px ;
+	       background: transparent ;
+	       color: #fff;
+	       border: 2px solid rgb(25, 128, 175);
+	       box-shadow: 0 0 10px ;
+	       border-radius: 50px;
+	       
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulaire d'Inscription</h1>
+        <form method="post">
+           
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div>
+                    <label for="first-name">Nom Complèt :</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div>
+                    <label for="dob">Date de naissance:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div>
+                    <label for="address">Adresse complète:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div>
+                    <label for="phone">Numéro de téléphone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div>
+                    <label for="email">Adresse e-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div><label for="filiere">Choix de la filière:</label>
+                    <select id="filiere" name="filiere" required>
+                        <option value="dev-syst-info">Développement des Systèmes Informatiques</option>
+                        <option value="ai">Intelligence Artificielle</option>
+                        <option value="comptabilite">Comptabilité et Gestion</option>
+                      
+                    </select>
+                </div>
+               
+                <div>
+                    <label for="niveau">Niveau d'étude:</label>
+                    <select id="niveau" name="niveau" required>
+                        <option value="1ere-annee">1ère Année</option>
+                        <option value="2eme-annee">2ème Année</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="previous-school">Établissement précédent (le cas échéant):</label>
+                    <input type="text" id="previous-school" name="previous-school">
+                </div>
+                <div>
+                    <label for="last-degree">Dernier diplôme obtenu (le cas échéant):</label>
+                    <input type="text" id="last-degree" name="last-degree">
+                </div>
+                <div>
+
+                    <label for="motivation">Motivation (facultatif):</label>
+                    <textarea id="motivation" name="motivation" rows="4"></textarea>
+                </div>
+              
+
+            </div>
+                    <label for="documents">Documents requis:</label>
+                    <input type="file" id="documents" name="documents" accept=".pdf, .doc, .docx">
+                
+    
+
+            
+             <label for="check">J'accepte les conditions générales<input type="checkbox" id="check" name="agree"></label>
+            <button type="submit">Soumettre</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
